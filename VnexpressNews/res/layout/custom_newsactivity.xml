@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:id="@+id/img_news" android:src="@drawable/icon" android:padding="5dip"></ImageView>
+		<LinearLayout
+			android:id="@+id/linearLayout3"
+			android:orientation="vertical"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:paddingLeft="5dip">
+
+			<LinearLayout
+			    android:id="@+id/linearLayout4"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" >
+
+				<TextView
+				    android:id="@+id/txt_pubdate_news"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="pubdate"
+				    android:textSize="12dip" android:layout_weight="1"/>
+
+				<CheckBox
+				    android:id="@+id/check"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="0.1"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:id="@+id/txt_title_news"
+				android:text="title" android:textColor="#F87431" android:paddingBottom="5dip"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:id="@+id/txt_description_news"
+			android:text="description"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

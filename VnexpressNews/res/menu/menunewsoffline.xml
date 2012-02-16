@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/readNewsOffline" android:title="Read NewsOffline"></item>
+    <item android:id="@+id/readNewsOnline" android:title="Read News Online"></item>
+    <item android:id="@+id/deleteAll" android:title="DeleteAll NewsOffLine"></item>
+
+    
+
+</menu>
