@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/ListNews"
+	xmlns:tns="http://www.example.org/ListNews"
+	elementFormDefault="qualified">
+	
+	<complexType name="News">
+		<sequence>
+			<element name="id" type="string"></element>
+			<element name="pubdate" type="string"></element>
+			<element name="title" type="string"></element>
+			<element name="description" type="string"></element>
+			<element name="link" type="string"></element>			
+			<element name="linkImage" type="string"></element>
+			<element name="content" type="string"></element>
+		</sequence>
+	</complexType>	
+	
+	<complexType name="ListNews">
+		<sequence maxOccurs="unbounded">
+			<element name="News" type="tns:News"></element>
+		</sequence>
+	</complexType>
+	
+	<element name="ListNews" type="tns:ListNews"></element>
+</schema>
+

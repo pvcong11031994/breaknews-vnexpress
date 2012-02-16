@@ -1,0 +1,5 @@
+﻿Vnexpress
+Xã hội
+(class=Title.*?)>.*?(?<title>.*?)</H1>
+
+Content: <P class=Normal>(?<content>.*?)</P>
